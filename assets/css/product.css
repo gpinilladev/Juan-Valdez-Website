@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  /* background-color: #000000d9; */
+  background-color: #850015;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  background-image: url('../img/screen-0.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 300px;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+#mainCarousel > .carousel-inner .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-height:70vh;
+}
+
+#mainCarousel #secondCarousel > .carousel-inner .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-height:50vh;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #d70021 !important;
+}
+
+.font--01 {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bg--01 {
+  background-image: url('../img/Banner-app-002.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.bg--02 {
+  background-image: url('../img/screen-01.png');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.bg--03 {
+  background-image: url('../img/csfere.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  background-size: 400px;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 2rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+}
+
+
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #D70021; 
+  border-color: #BD021E; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #BD0420; 
+  border-color: #BD021E; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #D70021; 
+  border-color: #BD021E; 
+} 
+ 
+.btn-sample .badge { 
+  color: #D70021; 
+  background-color: #ffffff; 
+}
