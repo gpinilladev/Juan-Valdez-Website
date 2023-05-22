@@ -9,6 +9,17 @@
  * Custom translucent site header
  */
 
+.navbar {
+  --bs-navbar-padding-x: 0 !important;
+  --bs-navbar-padding-y: 0 !important;
+ }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: #d40321;
+}
+
 .site-header {
   /* background-color: #000000d9; */
   background-color: #850015;
@@ -92,6 +103,15 @@
   max-height:50vh;
 }
 
+#thirdCarousel > .carousel-inner .carousel-item img {  
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  max-height: 400px;
+  opacity: 0.5;
+}
+
+
 .carousel .carousel-indicators button {
   background-color: #d70021 !important;
 }
@@ -125,6 +145,10 @@
   object-position: center;
   overflow: hidden;
   background-size: 400px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 
