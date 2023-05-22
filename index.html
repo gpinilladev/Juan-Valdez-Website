@@ -10,6 +10,7 @@
     <meta name="generator" content="Hugo 0.111.3">
     <title>☕️ Juan Valdez Website</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- <link href="./assets/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -118,7 +119,18 @@
     <link href="./assets/css/product.css" rel="stylesheet">
   </head>
   <body>
-
+    <div class="active--loading d-flex justify-content-center align-items-center bg-body-tertiary">
+      <div>
+        <div class="text-center mb-2">
+          <small id="text--percentage" class="font--01 animate__animated animate__pulse animate__infinite text-center">0%</small>
+          <div class="progress" style="height: 4px;">
+            <div id="progress--loading" class="progress-bar bg-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <img src="./assets/img/Juan-Valdez-Logo-Loading.png" class="animate__animated animate__fadeIn animate__infinite animate__slower">
+        <p class="font--01 animate__animated animate__pulse animate__infinite">Cargando...</p>
+      </div>
+    </div>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -186,7 +198,7 @@
     </div>
 
     
-<header class="font--01 site-header sticky-top py-1">
+<header class="font--01 site-header sticky-top py-1" style="z-index: 3; position: fixed;width: 100%;">
   <!-- <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
@@ -216,7 +228,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 7rem;">
     <div class="container-fluid">
       
-      <a class="navbar-brand" href="#" style="height: 7rem; display: flex; justify-content: space-between; align-items: center;">
+      <a class="navbar-brand animate__animated animate__flipInX" href="#" style="height: 7rem; display: flex; justify-content: space-between; align-items: center;">
         <!-- <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> -->
         <img src="./assets/img/logo.jpg" alt="Logo" style="width: 90px; z-index: 1;"  class="d-inline-block align-text-top">
         <!-- <span>&nbsp; Juan Valdez</span> -->
@@ -296,7 +308,7 @@
 
   <div class="font--01 position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Descarga nuestra app</h1>
+      <h1 class="display-4 fw-normal animate__animated animate__pulse">Descarga nuestra app</h1>
       <p class="lead fw-normal">
         <!-- And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages. -->
         Obten beneficios unicos descargando nuestra App Juan Valdez: redime puntos, disfruta productos exclusivos y evita filas.
@@ -304,12 +316,12 @@
       <p>
         Disponible en: 
       </p>
-      <a class="btn btn-outline-secondary" href="#">
+      <a class="btn btn-outline-secondary animate__animated animate__pulse animate__delay-1s" href="#">
         <i class="fa-brands fa-apple"></i>
         &nbsp;
         App Store
       </a>
-      <a class="btn btn-outline-secondary" href="#">
+      <a class="btn btn-outline-secondary animate__animated animate__pulse animate__delay-1s" href="#">
         <i class="fa-brands fa-android"></i>
         &nbsp;
         Play Store
@@ -397,7 +409,7 @@
 
   <div class="album py-3 bg-body-tertiary">
     <div class="container">
-      <h2 class="pb-2 text-center">Ultimos post</h2>
+      <h2 class="pb-2 text-center font--01">Ultimos post</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm font--01">
@@ -785,7 +797,7 @@
   </div>
 
 
-  <div class="container-fluid px-4 py-5 bg-body-tertiary" id="custom-cards">
+  <div class="container-fluid px-4 py-5 bg-body-tertiary font--01" id="custom-cards">
 
     <h2 class="pb-2 text-center">Proximos eventos</h2>
 
@@ -884,7 +896,7 @@
     </div>
   </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 font--01">
     <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">El café colombiano y sus beneficios</h2>
@@ -904,7 +916,7 @@
       </div>
     </div>
   </div>
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 font--01">
     <div class="text-bg-danger me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 py-3">
         <h2 class="display-5">Historias con sabor</h2>
@@ -975,58 +987,49 @@
   </div>
 </footer> -->
   
-  <div class="bg-body-tertiary">
+  <div class="bg-body-tertiary font--01">
     <div class="container">
       <footer class="py-5">
         <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Mapa del sitio</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">¿Quienes somos?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Productos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sostenibilidad</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Amigos de Juan Valdez</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Trabaja con nosotros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tienda online</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contactanos</a></li>
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+          <div class="col-6 col-md-3 mb-3">
+            <h5>Terminos</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Términos y condiciones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Política de tratamiento de datos </a></li>
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
+          
 
-          <div class="col-md-5 offset-md-1 mb-3">
+          <div class="col offset-md-1 mb-3">
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <h5>Suscr&iacute;bete a nuestro newsletter</h5>
+              <p>Enterate de nuestras promociones y se el primero en conocer los nuevos productos y eventos.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
+                <label for="newsletter1" class="visually-hidden">Correo electr&oacute;nico</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electrónico">
+                <button class="btn btn-primary" type="button">Suscribir</button>
               </div>
             </form>
           </div>
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <p>© 2023 Demo - Portafolio, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3">
               <a class="link-body-emphasis" href="#">
@@ -1048,11 +1051,11 @@
       </footer>
     </div>
   </div>
-
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
     <!-- <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-
+    <script src="./assets/js/app.js"></script>
       
   </body>
 </html>
